@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator Segitiga</title>
+<link rel="stylesheet" href="/asset/styles.css">
+</head>
+<body>
+<nav class="navbar">
+  <h1>Kalkulator Penghitung Luas & keliling </h1>
+</nav>
+
+<div id="luas" class="container">
+  <h1>Kalkulator Luas Segitiga</h1>
+  <img src="/asset/Asset segitiga untuk tugas.png" id="gambar">
+  <form id="area-form">
+    <label for="base">Panjang Alas:</label>
+    <input type="number" id="base" placeholder="Panjang Alas" required>
+  
+    <label for="height">Tinggi:</label>
+    <input type="number" id="height" placeholder="Tinggi" required>
+  
+    <button type="button" id="calculateArea">Hitung Luas</button>
+    <button type="button" id="resetArea">Reset</button>
+  </form>
+  
+  <div id="areaResult" class="result">
+    <p>Luas: <span id="areaValue"></span></p>
+    <div class="calculation-steps">
+      <p>Langkah-langkah:</p>
+      <ol id="areaSteps"></ol>
+    </div>
+  </div>
+</div>
+
+<div id="keliling" class="container">
+  <h1>Kalkulator Keliling Segitiga</h1>
+  <img src="/asset/Asset segitiga untuk tugas.png" id="gambar">
+  <form id="perimeter-form">
+    <label for="sideA">Sisi A:</label>
+    <input type="number" id="sideA" placeholder="Sisi A" required>
+  
+    <label for="sideB">Sisi B:</label>
+    <input type="number" id="sideB" placeholder="Sisi B" required>
+  
+    <label for="sideC">Sisi C:</label>
+    <input type="number" id="sideC" placeholder="Sisi C" required>
+  
+    <button type="button" id="calculatePerimeter">Hitung Keliling</button>
+    <button type="button" id="resetPerimeter">Reset</button>
+  </form>
+  
+  <div id="perimeterResult" class="result">
+    <p>Keliling: <span id="perimeterValue"></span></p>
+    <div class="calculation-steps">
+      <p>Langkah-langkah:</p>
+      <ol id="perimeterSteps"></ol>
+    </div>
+  </div>
+</div>
+
+<div id="result" class="container">
+  <h1>Hasil Perhitungan</h1>
+  <p>Luas: <span id="resultArea"></span></p>
+  <p>Keliling: <span id="resultPerimeter"></span></p>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
